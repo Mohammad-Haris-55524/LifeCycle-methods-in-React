@@ -32,8 +32,9 @@ export default Render
 // Q4) Render method ke andar kya nahi karna chahiye?
 // ANSWER:
 // Render method ke andar kuch cheezein avoid karni chahiye:
-// Side effects: Jaise DOM manipulation, API calls, ya event listeners ka use render method ke andar nahi karna chahiye. Yeh cheezein lifecycle methods jaise componentDidMount mein karni chahiye.
-// State ko update karna: Render method ke andar this.setState() use karna forbidden hai, kyunki isse infinite loop create ho sakta hai.
+// Side effects: Jaise DOM manipulation, API calls, ya event listeners ka use render method ke andar nahi karna chahiye. Yeh cheezein lifecycle
+// methods jaise componentDidMount mein karni chahiye. State ko update karna: Render method ke andar this.setState() use karna forbidden hai, 
+// kyunki isse infinite loop create ho sakta hai.
 
 
 // Q5) Render method kyun baar-baar call hota hai?
