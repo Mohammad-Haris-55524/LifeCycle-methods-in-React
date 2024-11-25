@@ -2,9 +2,25 @@ import React, { Component } from 'react'
 import Constructor from './Constructor'
 
 export class Render extends Component {
+  constructor(){
+    super()
+    this.state = {
+      count : 0
+    }
+  }
+  counterHandler(){
+    this.setState({
+      count : count + 1   
+    })
+  }
   render() {
     return (
-      <div>Render</div>
+      <>
+            <div>Render</div>
+            <button onClick={this.counterHandler}>Counter</button>
+            <div>{this.state.count}</div>
+      </>
+
     )
   }
 }
