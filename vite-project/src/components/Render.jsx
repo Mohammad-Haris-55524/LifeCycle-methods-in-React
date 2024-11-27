@@ -5,19 +5,21 @@ export class Render extends Component {
   constructor(){
     super()
     this.state = {
-      count : 0
+      count : 0,
     }
   }
   counterHandler(){
     this.setState({
-      count : count + 1   
+      count : this.state.count + 1   
     })
   }
   render() {
     return (
       <>
             <div>Render</div>
-            <button onClick={this.counterHandler}>Counter</button>
+            <button onClick={() => this.counterHandler()}>Counter</button>
+            {/* <button onClick={()=> this.setState({count: this.state.count + 1})}>Counter</button> */}
+
             <div>{this.state.count}</div>
       </>
 
