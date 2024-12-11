@@ -7,6 +7,7 @@ import ComponentDidUpdate from './components/ComponentDidUpdate'
 import ShouldComponentUpdate from './components/ShouldComponentUpdate'
 import GetSnapshotBeforeUpdate from './components/getSnapshotBeforeUpdate'
 import { useState } from 'react'
+import ComponentWillUnMount from './components/ComponentWillUnMount'
 
 function App() {
 const [userName, setUserName] = useState('Mohammad')
@@ -19,8 +20,11 @@ return (
 {/* <ComponentDidMount/> */}
 {/* <ComponentDidUpdate/> */}
 {/* <ShouldComponentUpdate/> */}
-<GetSnapshotBeforeUpdate name={userName}/>
-<button onClick={()=>setUserName("Mohammad Haris")}>Change name</button>
+{/* --------------------------------------------------------------------------------------------------------------------------------------- */}
+{/* <GetSnapshotBeforeUpdate name={userName}/>
+<button onClick={()=>setUserName("Mohammad Haris")}>Change name</button> */}
+{/* --------------------------------------------------------------------------------------------------------------------------------------- */}
+<ComponentWillUnMount/>
 </>
   )
 }
